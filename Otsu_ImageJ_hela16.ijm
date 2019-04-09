@@ -1,4 +1,4 @@
-open("C:/structure/code/otsu/hela-cells-crop8.tif");
+open("C:/structure/code/otsu/hela-cells-crop16.tif");
 
 
 // apply Otsu et Al. (1979) threshold

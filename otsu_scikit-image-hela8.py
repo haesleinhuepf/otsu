@@ -1,14 +1,12 @@
 from skimage import data, io, filters
-
+from tifffile import imread
 
 # load image
-image = data.imread("C:/structure/code/otsu/hela-cells-crop8.tif")
-#split channels
-image = image[:,:,0]
+image = imread("C:/structure/code/otsu/hela-cells-crop8.tif")
 
 # threshold
 threshold = filters.threshold_otsu(image)
-print(threshold)
+print("threshold:" + str(threshold))
 thresholded = image > threshold
 
 # show result
